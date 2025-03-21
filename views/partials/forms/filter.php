@@ -3,14 +3,14 @@
     <form action="/index.php" method="GET" class="row g-3">
         <!-- Campo Competition -->
         <div class="col-md-6 text-center fs-2">
-            <label for="competition" class="form-label">Competition:</label>
+            <label for="competition" class="form-label">Competitição:</label>
             <select name="competition" id="competition" class="form-select">
                 <?php if (!empty($comp)) : ?>
                     <option value="<?= htmlspecialchars(trim($comp), ENT_QUOTES, 'UTF-8'); ?>">
                         <?= htmlspecialchars($comp, ENT_QUOTES, 'UTF-8'); ?>
                     </option>
                 <?php else : ?>
-                    <option value=""> -- Select a competition -- </option>
+                    <option value=""> -- Filtrar por competição -- </option>
                 <?php endif; ?>
                 <?php 
                     $matchData = new MatchData();
@@ -25,9 +25,9 @@
 
         <!-- Campo Team -->
         <div class="col-md-6 text-center fs-2">
-            <label for="team" class="form-label">Team:</label>
+            <label for="team" class="form-label">Time:</label>
             <select name="team" id="team" class="form-select">
-                <option value=""> -- Select a competition team -- </option>
+                <option value=""> -- Filtrar por time -- </option>
                 <?php 
                     $teams = !empty($comp) ? $matchData->getTeams($comp) : $matchData->getAllTeams();
                     foreach ($teams['teams'] as $team): ?>
