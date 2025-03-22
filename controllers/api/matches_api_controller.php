@@ -1,4 +1,6 @@
 <?php
+    use Dotenv\Dotenv;
+
     class MatchesApiController {
 
         private $apiBaseUrl;
@@ -6,8 +8,10 @@
 
         public function __construct() {
             $this->apiBaseUrl = 'https://api.football-data.org/v4';
-            $config = include __DIR__ . '/../../config.php';
-            $this->apiKey = $config['apiKey'];
+
+            $dotenv = Dotenv::createImmutable(__DIR__ . '/../../');
+            $dotenv->load();
+            $this->apiKey = $_ENV['API_KEY'];
         }
 
         public function index() {

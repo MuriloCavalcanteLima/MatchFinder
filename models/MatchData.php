@@ -1,7 +1,5 @@
 <?php
     class MatchData {
-        private $apiToken =  '56addeef3f3047658970676611b21143';
-        
         public function getData($url) {
             $this->url = $url;
 
