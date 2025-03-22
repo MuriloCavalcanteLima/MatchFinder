@@ -11,6 +11,12 @@
 
             $dotenv = Dotenv::createImmutable(__DIR__ . '/../../');
             $dotenv->load();
+
+            // Obtém a API Key do .env
+            if (!isset($_ENV['API_KEY'])) {
+                throw new Exception('A chave API_KEY não está definida no arquivo .env.');
+            }
+
             $this->apiKey = $_ENV['API_KEY'];
         }
 
