@@ -1,4 +1,4 @@
-## objetivo do projeto
+## Objetivo do projeto
 O projeto consiste em um sistema simples em PHP desenvolvido localmente utilizando ambiente XAMPP, que consome uma API de futebol e lista na visualização informações sobre partidas, times e campeonatos.
 
 ## Requisitos:
@@ -41,16 +41,16 @@ O projeto consiste em um sistema simples em PHP desenvolvido localmente utilizan
 	- Consome a API para disponibilizar informações para a view e para a controller (formulário)
 
 
-------- [ WIP ] ---------------
-	- Verificação de requsitos
-		Requisitos:
-			Escolher um campeonato de futebol
-				> filtro
-			Exibir os jogos programados para a próxima rodada.
-				> visualização
-			Mostrar informações sobre os últimos resultados da competição.
-				> visualização
-			Pesquisar por um time específico e mostrar suas partidas programadas e últimos resultados.
-				> filtro + visualização
-			Tratamento de erros e segurança
-				> APIcontroller, Session, .env e flashmessage
+## ------- [ WIP ] ---------------
+- Verificação de requsitos
+	- Requisitos:
+		- Escolher um campeonato de futebol
+			- filtro
+		- Exibir os jogos programados para a próxima rodada.
+			- visualização
+		- Mostrar informações sobre os últimos resultados da competição.
+			- visualização
+		- Pesquisar por um time específico e mostrar suas partidas programadas e últimos resultados.
+			- filtro + visualização
+		- Tratamento de erros e segurança
+			- APIcontroller, Session, .env e flashmessage
