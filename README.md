@@ -2,11 +2,11 @@
 O projeto consiste em um sistema simples em PHP desenvolvido localmente utilizando ambiente XAMPP, que consome uma API de futebol e lista na visualização informações sobre partidas, times e campeonatos.
 
 ## Requisitos:
-  permitir que o usuario:
-	  - Escolha um campeonato de futebol (pode ser o Campeonato Brasileiro ou outro campeonato).
-	  - Exiba os jogos programados para a próxima rodada.
-	  - Mostre informações sobre os últimos resultados da competição (últimos jogos).
-	  - Permita pesquisar por um time específico e mostrar suas partidas programadas e últimos resultados.
+- Permitir que o usuario:
+	- Escolha um campeonato de futebol (pode ser o Campeonato Brasileiro ou outro campeonato).
+	- Exiba os jogos programados para a próxima rodada.
+  	- Mostre informações sobre os últimos resultados da competição (últimos jogos).
+	- Permita pesquisar por um time específico e mostrar suas partidas programadas e últimos resultados.
 
 ## Dependências
   composer - dotenv
