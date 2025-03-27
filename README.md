@@ -14,19 +14,19 @@ O projeto consiste em um sistema simples em PHP desenvolvido localmente utilizan
 ## Estrutura escolhida para desenvolvimento
 
 ### Controllers
-  - MatchesController 
-    - Recebe via GET informações do filtro (campeonato e/ou time), assinados como nulo na sua ausência (ex. no primeiro acesso
+- MatchesController 
+	- Recebe via GET informações do filtro (campeonato e/ou time), assinados como nulo na sua ausência (ex. no primeiro acesso
 
-		- index
-      - Instancia a controller que comunica com a API e realiza a chamada para a ação search
-      - Assina informações que serão utilizadas no formulário, no flash message e na listagem.
-        - $comp = $this->competition;
-        - $team = $this->team;
-        - $data = $apiController->search($comp, $team);
-        - $error = $data['error'] ?? null;
-			- Verifica a presença de $error (configuração do flash message)
-			- Chama a visualização com o resultado obtido da API
-			- O processo é englobado por um catch que dispara uma flashmessage com o erro, redirecionando para o index.
+	- index
+	      - Instancia a controller que comunica com a API e realiza a chamada para a ação search
+	      - Assina informações que serão utilizadas no formulário, no flash message e na listagem.
+	        - $comp = $this->competition;
+	        - $team = $this->team;
+	        - $data = $apiController->search($comp, $team);
+	        - $error = $data['error'] ?? null;
+				- Verifica a presença de $error (configuração do flash message)
+				- Chama a visualização com o resultado obtido da API
+				- O processo é englobado por um catch que dispara uma flashmessage com o erro, redirecionando para o index.
 
 		
   - matchesAPIcontroller:
