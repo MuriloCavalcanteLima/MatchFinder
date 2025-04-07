@@ -3,9 +3,9 @@ O projeto consiste em um sistema simples em PHP desenvolvido localmente utilizan
 
 ## Requisitos:
 - Permitir que o usuario:
-	- Escolha um campeonato de futebol (pode ser o Campeonato Brasileiro ou outro campeonato).
+	- Escolha um campeonato de futebol.
 	- Exiba os jogos programados para a próxima rodada.
-  	- Mostre informações sobre os últimos resultados da competição (últimos jogos).
+  	- Mostre informações sobre os últimos resultados da competição.
 	- Permita pesquisar por um time específico e mostrar suas partidas programadas e últimos resultados.
 
 ## Dependências
