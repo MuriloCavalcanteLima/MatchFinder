@@ -9,7 +9,7 @@ O projeto consiste em um sistema simples em PHP desenvolvido localmente utilizan
 	- Permita pesquisar por um time específico e mostrar suas partidas programadas e últimos resultados.
 
 ## Dependências
-  composer:dotenv - Criação de variáveis de ambiente (apiToken)
+  dotenv - Criação de variáveis de ambiente (apiToken)
 
 ## Estrutura escolhida para desenvolvimento
 
