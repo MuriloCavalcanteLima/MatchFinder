@@ -20,21 +20,16 @@ O projeto consiste em um sistema simples em PHP desenvolvido localmente utilizan
 	- index
 		- Instancia a controller que comunica com a API e realiza a chamada para a ação search
 		- Assina informações que serão utilizadas no formulário, no flash message e na listagem.
-			- $comp = $this->competition;
-	        	- $team = $this->team;
-	        	- $data = $apiController->search($comp, $team);
-	        	- $error = $data['error'] ?? null;
-		- Verifica a presença de $error (configuração do flash message)
 		- Chama a visualização com o resultado obtido da API
 		- O processo é englobado por um catch que dispara uma flashmessage com o erro, redirecionando para o index.
 
 		
   - MatchesApiController:
 	- index
-		- chama getMatchesByCompetition(), que monta a URL e chama o getData, que realiza a consulta com o pacote `curl`.
+		- realiza a consulta com o pacote `curl`.
   	- search
-	- monta a URL de acordo com a presença dos filtros de campeonato e/ou time
-	- chama getData, que realiza a consulta com o pacote curl, retornando a resposta em json para a Matches controller.
+		- monta a URL de acordo com a presença dos filtros de campeonato e/ou time
+		- realiza a consulta com o pacote `curl`., retornando a resposta em json para a Matches controller.
     
 ### MODELO
 - MatchData
