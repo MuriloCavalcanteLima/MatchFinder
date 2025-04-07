@@ -1,19 +1,16 @@
 ## Objetivo do projeto
 O projeto consiste em um sistema simples em PHP desenvolvido localmente utilizando ambiente XAMPP, que consome uma API de futebol e lista na visualização informações sobre partidas, times e campeonatos.
 
-## Requisitos:
+### Requisitos:
 - Permitir que o usuario:
 	- Escolha um campeonato de futebol.
 	- Exiba os jogos programados para a próxima rodada.
   	- Mostre informações sobre os últimos resultados da competição.
 	- Permita pesquisar por um time específico e mostrar suas partidas programadas e últimos resultados.
 
-## Dependências
-  dotenv - Criação de variáveis de ambiente (apiToken)
+<hr/>
 
-## Estrutura escolhida para desenvolvimento
-
-### Controllers
+## Controllers
 - MatchesController 
 	- Recebe via GET informações do filtro (campeonato e/ou time), assinados como nulo na sua ausência (ex. no primeiro acesso
 	- index
@@ -30,6 +27,15 @@ O projeto consiste em um sistema simples em PHP desenvolvido localmente utilizan
 		- monta a URL de acordo com a presença dos filtros de campeonato e/ou time
 		- realiza a consulta com o pacote `curl`., retornando a resposta em json para a Matches controller.
     
-### Model
+## Model
 - MatchData
 	- Consome a API para disponibilizar informações para a view e para a controller (formulário)
+
+## Dependências
+  dotenv - Criação de variáveis de ambiente (apiToken)
+
+## Executar localmente
+- clonar este repositório
+- configurar ambiente XAMPP
+- adicionar árvore de arquivos na pasta raiz do projeto (xampp/htdocs)
+- iniciar o apache e acessar o servidor local (ex. 127.0.0.1)
